@@ -2,62 +2,11 @@
 
 :root {
   --mainBlue: rgb(3, 19, 252);
+  --mainBlueTransparent: rgba(3, 19, 252, 0.8);
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-.navbar {
-  width: 100%;
-  height: 100px;
-  border-bottom: 1px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.navbarLogo {
-  margin-left: 10vw;
-  font-size: 20px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-}
-span {
-  white-space: nowrap;
-}
-.firstLogoElement {
-  color: var(--mainBlue);
-}
-.navbarLinks {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 500;
-  position: relative;
-  right: 15vw;
-}
-
-.navbarLinks li {
-  display: inline-block;
-  padding: 0 15px 0 15px;
-  font-size: 20px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-}
-.joinUsContainer {
-  position: relative;
-  right: 8vw;
-}
-.joinUsButton {
-  width: 180px;
-  height: 60px;
-  border-radius: 30px;
-  background-color: var(--mainBlue);
-  font-size: 20px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  color: white;
-  border: 0.5px solid grey;
 }
