@@ -10,10 +10,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 200px;
 }
 .irreversedComponent .componentImage {
   width: 40vw;
-  margin: 0 7vw 0 50px;
+  margin: 0 7vw 0 7vw;
   border-radius: 50px;
   -webkit-box-shadow: 5px 6px 19px 1px rgba(0, 0, 0, 1);
   -moz-box-shadow: 5px 6px 19px 1px rgba(0, 0, 0, 1);
@@ -24,7 +25,7 @@
   font-size: 20px;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  padding: 0 50px 0 7vw;
+  margin: 0 50px 0 7vw;
 }
 
 .clubTitle {
@@ -61,5 +62,53 @@
   font-size: 20px;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  padding: 0 7vw 0 50px;
+  margin: 0 7vw 0 50px;
+}
+.clubDescription {
+  position: relative;
+}
+.irreversedComponent .clubDescription::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-left: 7px solid var(--mainBlue);
+  border-bottom: 7px solid var(--mainBlue);
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+}
+.irreversedComponent .clubDescription::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-top: 7px solid black;
+  border-right: 7px solid black;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+}
+.reversedComponent .clubDescription::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-left: 7px solid black;
+  border-bottom: 7px solid black;
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+}
+
+.reversedComponent .clubDescription::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-top: 7px solid var(--mainBlue);
+  border-right: 7px solid var(--mainBlue);
+  position: absolute;
+  top: -30px;
+  right: -30px;
 }
