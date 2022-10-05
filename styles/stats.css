@@ -1,0 +1,21 @@
+.stats {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+.icon {
+  font-size: 200px;
+}
+.statAmount {
+  font-size: 50px;
+  font-weight: 700;
+  margin-top: 50px;
+}
+.statDesc {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: rgb(105, 105, 105);
+}
