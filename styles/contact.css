@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+.contactContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 200px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contactHeader {
+  font-size: 2em;
+  background: -webkit-linear-gradient(45deg, var(--mainBlue) 0%, black 45%, black 55%, var(--mainBlue) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+input,
+textarea {
+  width: 30vw;
+  height: 60px;
+}
+
+.formsContainer {
+  display: grid;
+  grid-template-columns: 20% 30%;
+  /* padding: 100px 0 0 100px; */
+  padding-top: 100px;
+  align-items: center;
+  justify-content: center;
+}
+.forms input,
+.forms textarea {
+  margin: 30px;
+  font-size: 1.8em;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+.forms textarea {
+  height: 120px;
+  font-size: 1.3em;
+  padding: 5px;
+}
+
+.labels {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  top: -30px;
+}
+.labels * {
+  margin: 49px;
+  line-height: 25px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.labels *:last-child {
+  position: relative;
+  top: 25px;
+}
+
+.forms *:focus {
+  outline: none !important;
+  border: 2px solid rgb(119, 141, 212);
+}
+.forms input[type='submit'] {
+  position: absolute;
+  width: 165px;
+  height: 50px;
+  background-color: var(--mainBlue);
+  color: white;
+  border-radius: 30px;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.6s all;
+}
+.forms input[type='submit']:hover {
+  background-color: whitesmoke;
+  color: var(--mainBlue);
+  border: 1px solid grey;
+  cursor: pointer;
+}
