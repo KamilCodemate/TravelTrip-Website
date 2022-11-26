@@ -4,7 +4,9 @@
   --mainBlue: rgb(3, 19, 252);
   --mainBlueTransparent: rgba(3, 19, 252, 0.8);
 }
-
+html {
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
   margin: 0;

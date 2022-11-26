@@ -2,7 +2,6 @@ const statsContainer = document.querySelector('.stats');
 
 const checkDisplay = setInterval(() => {
   statsContainer.classList.forEach((element) => {
-    console.log(element);
     if (element === 'displayed') animateStats();
   });
 }, 50);

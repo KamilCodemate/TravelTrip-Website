@@ -22,17 +22,22 @@
     <title>TravelTrip</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="home">
+      <div class="toggleButton">
+        <div id="stick1"></div>
+        <div id="stick2"></div>
+        <div id="stick3"></div>
+      </div>
       <div class="navbar">
         <div class="navbarLogo">
           <h1> <span class="firstLogoElement">Travel</span><span class="secondLogoElement">Trip</span> </h1>
         </div>
         <div class="navbarLinks">
           <ul>
-            <li>HOME</li>
-            <li>Our Club</li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#hero">Our Club</a></li>
             <li>Pricing</li>
-            <li>Contact</li>
+            <li> <a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div class="joinUsContainer">
@@ -52,7 +57,7 @@
           <button class="secondHeroButton">How does it work?</button>
         </div>
       </div>
-      <div class="ourClubContainer">
+      <div class="ourClubContainer" id="hero">
         <div class="clubTitle">
           <h1>
             <span class="firstClubTitleElement">Our</span>
@@ -139,9 +144,9 @@
         </div>
       </div>
 
-      <div class="contactContainer">
+      <div class="contactContainer" id="contact">
         <div class="contactHeader">
-          <h1>Contact with us</h1>
+          <h1>Contact us</h1>
         </div>
         <div class="formsContainer">
           <div class="labels">
@@ -168,5 +173,6 @@
     <script src="./scripts/mainApp.js"></script>
     <script src="./scripts/counter.js"></script>
     <script src="./scripts/handleSubmit.js"></script>
+    <script src="./scripts/navToggle.js"></script>
   </body>
 </html>

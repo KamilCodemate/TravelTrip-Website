@@ -9,7 +9,7 @@
   position: sticky;
   top: 0;
   background-color: white;
-  transition: all 1s;
+  transition: transform 0.6s;
 }
 .navbarLogo {
   margin-left: 10vw;
@@ -60,4 +60,103 @@ span {
   -webkit-box-shadow: 11px 11px 35px -9px rgba(66, 68, 90, 1);
   -moz-box-shadow: 11px 11px 35px -9px rgba(66, 68, 90, 1);
   box-shadow: 11px 11px 35px -9px rgba(66, 68, 90, 1);
+}
+.navbarLinks a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.4s;
+}
+
+.navbarLinks a:hover {
+  color: var(--mainBlue);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1450px) {
+  .navbarLinks {
+    margin-left: 20%;
+  }
+}
+
+.toggleButton {
+  width: fit-content;
+  height: fit-content;
+  display: none;
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 999;
+  display: none;
+}
+.toggleButton div {
+  width: 35px;
+  height: 5px;
+  background-color: var(--mainBlueTransparent);
+  margin: 5px 0 5px 0;
+  z-index: 999;
+  display: none;
+}
+@media only screen and (max-width: 1200px) {
+  .toggleButton div,
+  .toggleButton {
+    display: block;
+  }
+  .navbar {
+    height: 100vh;
+    width: 50%;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 11px 11px 35px -9px rgb(66 68 90);
+    -moz-box-shadow: 11px 11px 35px -9px rgba(66, 68, 90, 1);
+    box-shadow: 11px 11px 35px -9px rgb(66 68 90);
+    /* transition: all 0.6s; */
+    transform: translateX(-120%);
+  }
+  .navbarLogo {
+    display: none;
+  }
+  .navbarLinks {
+    margin-left: 0;
+
+    text-align: center;
+  }
+  .joinUsContainer,
+  .navbarLinks {
+    right: 0;
+  }
+
+  .navbarLinks li {
+    display: block;
+    margin: 100px 0 100px 0;
+    font-size: 1.8em;
+  }
+  .joinUsButton {
+    width: 235px;
+    height: 70px;
+    font-size: 2em;
+  }
+  .navActive {
+    position: fixed;
+    transform: translateX(0%);
+  }
+  .toggleButton {
+    display: block;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .navbar {
+    width: 100%;
+    transform: translateX(-120%);
+  }
+  .navActive {
+    position: fixed;
+    transform: translateX(0%);
+  }
 }
