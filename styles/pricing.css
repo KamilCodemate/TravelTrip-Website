@@ -1,0 +1,78 @@
+.pricingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 200px;
+}
+.price {
+  width: 403px;
+  height: 669px;
+  border: 1px solid #707070;
+  border-radius: 47px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  font-weight: lighter;
+}
+.priceAmount {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.priceHeader h2 {
+  color: #707070;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.bigAmount,
+.smallAmount {
+  color: black;
+  font-weight: 700;
+}
+.bigAmount {
+  font-size: 3.5em;
+}
+.smallAmount {
+  font-size: 2em;
+}
+.per {
+  font-size: 0.4em;
+  color: #707070;
+  font-weight: 400;
+}
+.priceDescription {
+  font-weight: 400;
+  color: #707070;
+}
+.benefits {
+  margin-top: 50px;
+}
+.benefits ul {
+  list-style: none;
+  font-weight: 500;
+  color: black;
+}
+.benefits ul li {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.benefits ul li i {
+  margin-right: 11px;
+  font-size: 2em;
+}
+.fa-circle-check {
+  color: #097969;
+}
+.chooseButton {
+  width: 200px;
+  height: 60px;
+  font-size: 2em;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 20px;
+}
