@@ -87,3 +87,7 @@ display: grid;
 #contContainer, #socialContainer{
     width: 30%;
 } */
+.displayed {
+  opacity: 1 !important;
+  transform: translateY(0);
+}

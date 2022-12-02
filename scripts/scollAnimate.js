@@ -1,4 +1,4 @@
-let animatingElements = document.querySelectorAll('.ourClubComponent, .clubTitle, .stats, .contactContainer');
+let animatingElements = document.querySelectorAll('.ourClubComponent, .clubTitle, .stats, .contactContainer, .pricingMainContainer');
 
 window.addEventListener('scroll', () => {
   animatingElements.forEach((element) => {
