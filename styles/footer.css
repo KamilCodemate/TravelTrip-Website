@@ -1,0 +1,89 @@
+.footer {
+  height: 250px;
+  width: 100%;
+  margin-top: 200px;
+  background-image: url();
+
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://images.pexels.com/photos/919943/pexels-photo-919943.jpeg);
+  background-position-y: -200px;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.destinations {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: rgb(212, 187, 187);
+  font-size: 1.05em;
+  text-align: center;
+  column-gap: 30px;
+}
+.footerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.footerTitle {
+  color: white;
+  font-size: 1.4em;
+}
+#destTitle {
+  margin-bottom: 10px;
+}
+.destinations * {
+  margin: 5px;
+}
+.contactContent {
+  color: rgb(212, 187, 187);
+  font-size: 1.3em;
+}
+.contactContent * {
+  margin: 7px 15px 7px 15px;
+}
+.contactContent .fa-solid {
+  margin-right: 20px;
+}
+#contContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+#contTitle {
+  position: relative;
+  bottom: 45px;
+}
+
+/* .socialContent{
+display: grid;
+   grid-template-columns: 1fr 1fr;
+
+   
+} */
+.socialContent * {
+  color: rgb(212, 187, 187);
+  font-size: 3em;
+  margin: 10px;
+}
+/* .separator{
+    height: 95%;
+    width: 1px;
+    background-color: rgb(212, 187, 187);
+} */
+#socialTitle {
+  position: relative;
+  bottom: 59px;
+}
+
+/* #destContainer{
+    width: 40%;
+}
+#contContainer, #socialContainer{
+    width: 30%;
+} */
