@@ -6,5 +6,5 @@ This website was made for fun. The TravelTrip company that claims to own the sit
 it is not affiliated with this site.
 
 ## Running
-Just download and open `index.html` file. No other scripts or local servers are required. However, keep in mind <ins>that the site is not yet 
+Just clone/download and open `index.html` file. No other scripts or local servers are required. However, keep in mind <ins>that the site is not yet 
 fully finished</ins> and many things may not work or look unsightly.
