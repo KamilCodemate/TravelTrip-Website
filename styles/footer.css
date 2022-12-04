@@ -33,9 +33,7 @@
   color: white;
   font-size: 1.4em;
 }
-#destTitle {
-  margin-bottom: 10px;
-}
+
 .destinations * {
   margin: 5px;
 }
@@ -44,21 +42,18 @@
   font-size: 1.3em;
 }
 .contactContent * {
-  margin: 7px 15px 7px 15px;
+  margin: 0px 15px 7px 15px;
 }
+
 .contactContent .fa-solid {
   margin-right: 20px;
 }
-#contContainer {
+/* #contContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
-}
-#contTitle {
-  position: relative;
-  bottom: 45px;
-}
+} */
 
 /* .socialContent{
 display: grid;
@@ -71,15 +66,22 @@ display: grid;
   font-size: 3em;
   margin: 10px;
 }
+.socialContent a,
+.socialContent i {
+  font-size: 1.7em;
+  text-decoration: none;
+  transition: color 0.6s;
+}
+.socialContent a:hover,
+.socialContent i:hover {
+  color: rgb(255, 255, 255);
+}
+
 /* .separator{
     height: 95%;
     width: 1px;
     background-color: rgb(212, 187, 187);
 } */
-#socialTitle {
-  position: relative;
-  bottom: 59px;
-}
 
 /* #destContainer{
     width: 40%;
@@ -90,4 +92,28 @@ display: grid;
 .displayed {
   opacity: 1 !important;
   transform: translateY(0);
+}
+.footerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  bottom: 40px;
+}
+.contactContent,
+.destinations,
+.socialContent {
+  height: 100px;
+  position: relative;
+  top: 30px;
+}
+
+.contactContent .phone,
+.contactContent .email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
