@@ -55,6 +55,7 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   color: white;
+  transition: background-color 0.4s;
 }
 
 .secondHeroButton {
@@ -65,7 +66,13 @@
   font-weight: 700;
   text-decoration: underline;
 }
-
+.mainHeroButton:hover {
+  background-color: var(--mainBlue);
+  cursor: pointer;
+}
+.secondHeroButton:hover {
+  cursor: pointer;
+}
 @media only screen and (max-width: 650px) {
   .heroTitleButtons {
     display: flex;

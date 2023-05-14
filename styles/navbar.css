@@ -137,11 +137,7 @@ span {
     margin: 100px 0 100px 0;
     font-size: 1.8em;
   }
-  .joinUsButton {
-    width: 235px;
-    height: 70px;
-    font-size: 2em;
-  }
+
   .navActive {
     position: fixed;
     transform: translateX(0%);
@@ -150,6 +146,18 @@ span {
     display: block;
   }
 }
+.joinUsButton {
+  width: 165px;
+  height: 50px;
+  font-size: 2em;
+  transition: background-color 0.4s;
+  font-size: 20px;
+}
+.joinUsButton:hover {
+  cursor: pointer;
+  background-color: var(--mainBlueTransparent);
+}
+
 @media only screen and (max-width: 600px) {
   .navbar {
     width: 100%;
