@@ -94,3 +94,34 @@ textarea {
   opacity: 1 !important;
   transform: translateY(0);
 }
+@media only screen and (max-width: 1300px) {
+  .formsContainer {
+    grid-template-columns: 40% 60%;
+    width: 70%;
+  }
+  .forms,
+  .forms form {
+    width: 100%;
+  }
+  .forms {
+    position: relative;
+    top: 50px;
+  }
+  #contactForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  input[type='submit'] {
+    position: static !important;
+    align-self: flex-start;
+    justify-self: flex-start;
+  }
+  @media only screen and (max-width: 914px) {
+    .formsContainer {
+      grid-template-columns: 40% 60%;
+      width: 100%;
+    }
+  }
+}
